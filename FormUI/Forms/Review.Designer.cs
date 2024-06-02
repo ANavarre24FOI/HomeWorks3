@@ -33,6 +33,7 @@ namespace Project.Forms
             this.Button_Review_MainDish = new System.Windows.Forms.Button();
             this.Button_Review_SecondaryDish = new System.Windows.Forms.Button();
             this.Button_Review_Dessert = new System.Windows.Forms.Button();
+            this.Button_NoReview = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WannaMakeReview
@@ -75,11 +76,23 @@ namespace Project.Forms
             this.Button_Review_Dessert.UseVisualStyleBackColor = true;
             this.Button_Review_Dessert.Click += new System.EventHandler(this.Button_Review_Dessert_Click);
             // 
+            // Button_NoReview
+            // 
+            this.Button_NoReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Button_NoReview.Location = new System.Drawing.Point(197, 156);
+            this.Button_NoReview.Name = "Button_NoReview";
+            this.Button_NoReview.Size = new System.Drawing.Size(114, 48);
+            this.Button_NoReview.TabIndex = 4;
+            this.Button_NoReview.Text = "No, Thanks";
+            this.Button_NoReview.UseVisualStyleBackColor = true;
+            this.Button_NoReview.Click += new System.EventHandler(this.Button_NoReview_Click);
+            // 
             // Review
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 336);
+            this.ClientSize = new System.Drawing.Size(530, 216);
+            this.Controls.Add(this.Button_NoReview);
             this.Controls.Add(this.Button_Review_Dessert);
             this.Controls.Add(this.Button_Review_SecondaryDish);
             this.Controls.Add(this.Button_Review_MainDish);
@@ -97,5 +110,6 @@ namespace Project.Forms
         private System.Windows.Forms.Button Button_Review_MainDish;
         private System.Windows.Forms.Button Button_Review_SecondaryDish;
         private System.Windows.Forms.Button Button_Review_Dessert;
+        private System.Windows.Forms.Button Button_NoReview;
     }
 }

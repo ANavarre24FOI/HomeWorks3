@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Dapper;
+using Project.Repositories;
 
 namespace Project.Forms
 {
@@ -64,6 +65,8 @@ namespace Project.Forms
 
                 connection.Execute(query, parameters);
             }
+
+            UsersRepository.AddGiftPoints(userId, 3);
         }
     }
 }

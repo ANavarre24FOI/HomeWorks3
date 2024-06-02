@@ -51,11 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MakeReview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MakeReview.Designer.cs">
       <DependentUpon>MakeReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Register.cs">
       <SubType>Form</SubType>
@@ -93,11 +105,17 @@
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MakeReview.resx">
       <DependentUpon>MakeReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OrderALaCarte.resx">
       <DependentUpon>OrderALaCarte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>

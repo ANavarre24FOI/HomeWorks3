@@ -47,9 +47,9 @@ namespace Project
             if (LoggedUser != null && LoggedUser.CheckPassword(password))
             {
                 MessageBox.Show("User Logged Successfully!");
-                OrderALaCarte frmOrderALaCarte = new OrderALaCarte(LoggedUser);
+                DashBoard menu = new DashBoard(LoggedUser);
                 Hide();
-                frmOrderALaCarte.ShowDialog();
+                menu.ShowDialog();
                 Close();
             }
             else

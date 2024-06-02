@@ -13,13 +13,14 @@ namespace Project.Models
         public string Password { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
+        public int GiftPoints { get; set; }
 
         public string FullInfo
         {
             get
             {
                 // "Tim Corey (test@test.com)"
-                return $"{User_id}, {Login}, {Password}, { Name }, {LastName})";
+                return $"{User_id}, {Login}, {Password}, { Name }, {LastName}, {GiftPoints})";
             }
         }
 

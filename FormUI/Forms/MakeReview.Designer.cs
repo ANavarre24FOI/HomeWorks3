@@ -36,6 +36,7 @@ namespace Project.Forms
             this.TextBox_Comment = new System.Windows.Forms.TextBox();
             this.Label_Comment = new System.Windows.Forms.Label();
             this.Button_Submit = new System.Windows.Forms.Button();
+            this.Label_GiftPoints = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TextBox_DishName
@@ -105,11 +106,22 @@ namespace Project.Forms
             this.Button_Submit.UseVisualStyleBackColor = true;
             this.Button_Submit.Click += new System.EventHandler(this.Button_Submit_Click);
             // 
+            // Label_GiftPoints
+            // 
+            this.Label_GiftPoints.AutoSize = true;
+            this.Label_GiftPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Label_GiftPoints.Location = new System.Drawing.Point(74, 394);
+            this.Label_GiftPoints.Name = "Label_GiftPoints";
+            this.Label_GiftPoints.Size = new System.Drawing.Size(238, 20);
+            this.Label_GiftPoints.TabIndex = 6;
+            this.Label_GiftPoints.Text = "This Review will give you 3 points";
+            // 
             // MakeReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 450);
+            this.Controls.Add(this.Label_GiftPoints);
             this.Controls.Add(this.Button_Submit);
             this.Controls.Add(this.Label_Comment);
             this.Controls.Add(this.TextBox_Comment);
@@ -133,5 +145,6 @@ namespace Project.Forms
         private System.Windows.Forms.TextBox TextBox_Comment;
         private System.Windows.Forms.Label Label_Comment;
         private System.Windows.Forms.Button Button_Submit;
+        private System.Windows.Forms.Label Label_GiftPoints;
     }
 }

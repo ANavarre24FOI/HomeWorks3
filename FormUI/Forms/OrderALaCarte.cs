@@ -20,6 +20,8 @@ namespace Project.Forms
         {
             InitializeComponent();
             loggedUser = user;
+            MessageBox.Show(loggedUser.FullInfo);
+            Label_nbrOfPoints.Text = Convert.ToString(loggedUser.GiftPoints);
         }
 
         private void OrderALaCarte_Load(object sender, EventArgs e)
@@ -80,11 +82,12 @@ namespace Project.Forms
             CurrentOrder.Secondary_Dish = secondaryDishId;
             CurrentOrder.Dessert = dessertId;
 
+            UsersRepository.DecreaseGiftPoints(CurrentOrder.User_id, 10);
+
             Review frmreview = new Review(CurrentOrder);
             Hide();
             frmreview.ShowDialog();
             Close();
         }
-            
     }
 }

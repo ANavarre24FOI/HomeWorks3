@@ -36,6 +36,9 @@ namespace Project.Forms
             this.Label_SecondaryDish = new System.Windows.Forms.Label();
             this.Label_Dessert = new System.Windows.Forms.Label();
             this.OrderButton = new System.Windows.Forms.Button();
+            this.Label_Points = new System.Windows.Forms.Label();
+            this.Label_nbrOfPoints = new System.Windows.Forms.Label();
+            this.Label_CostPhrase = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ComboBox_MainDish
@@ -102,11 +105,41 @@ namespace Project.Forms
             this.OrderButton.UseVisualStyleBackColor = true;
             this.OrderButton.Click += new System.EventHandler(this.OrderButton_Click);
             // 
+            // Label_Points
+            // 
+            this.Label_Points.AutoSize = true;
+            this.Label_Points.Location = new System.Drawing.Point(192, 176);
+            this.Label_Points.Name = "Label_Points";
+            this.Label_Points.Size = new System.Drawing.Size(92, 13);
+            this.Label_Points.TabIndex = 7;
+            this.Label_Points.Text = "You have actually";
+            // 
+            // Label_nbrOfPoints
+            // 
+            this.Label_nbrOfPoints.AutoSize = true;
+            this.Label_nbrOfPoints.Location = new System.Drawing.Point(290, 176);
+            this.Label_nbrOfPoints.Name = "Label_nbrOfPoints";
+            this.Label_nbrOfPoints.Size = new System.Drawing.Size(35, 13);
+            this.Label_nbrOfPoints.TabIndex = 8;
+            this.Label_nbrOfPoints.Text = "label1";
+            // 
+            // Label_CostPhrase
+            // 
+            this.Label_CostPhrase.AutoSize = true;
+            this.Label_CostPhrase.Location = new System.Drawing.Point(203, 273);
+            this.Label_CostPhrase.Name = "Label_CostPhrase";
+            this.Label_CostPhrase.Size = new System.Drawing.Size(144, 13);
+            this.Label_CostPhrase.TabIndex = 9;
+            this.Label_CostPhrase.Text = "Your Order cost 10 GiftPoints";
+            // 
             // OrderALaCarte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 383);
+            this.Controls.Add(this.Label_CostPhrase);
+            this.Controls.Add(this.Label_nbrOfPoints);
+            this.Controls.Add(this.Label_Points);
             this.Controls.Add(this.OrderButton);
             this.Controls.Add(this.Label_Dessert);
             this.Controls.Add(this.Label_SecondaryDish);
@@ -131,5 +164,8 @@ namespace Project.Forms
         private System.Windows.Forms.Label Label_SecondaryDish;
         private System.Windows.Forms.Label Label_Dessert;
         private System.Windows.Forms.Button OrderButton;
+        private System.Windows.Forms.Label Label_Points;
+        private System.Windows.Forms.Label Label_nbrOfPoints;
+        private System.Windows.Forms.Label Label_CostPhrase;
     }
 }

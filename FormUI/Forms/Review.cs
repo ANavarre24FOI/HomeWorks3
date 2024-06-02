@@ -54,7 +54,9 @@ namespace Project.Forms
             int userId = madeOrder.User_id; // Assuming madeOrder contains User_id
 
             MakeReview frmMakeReview = new MakeReview(dishName, madeOrder.Main_Dish, userId);
+            Hide();
             frmMakeReview.ShowDialog();
+            Close();
         }
 
         private void Button_Review_SecondaryDish_Click(object sender, EventArgs e)
@@ -63,7 +65,9 @@ namespace Project.Forms
             int userId = madeOrder.User_id; // Assuming madeOrder contains User_id
 
             MakeReview frmMakeReview = new MakeReview(dishName, madeOrder.Secondary_Dish, userId);
+            Hide();
             frmMakeReview.ShowDialog();
+            Close();
         }
 
         private void Button_Review_Dessert_Click(object sender, EventArgs e)
@@ -72,7 +76,14 @@ namespace Project.Forms
             int userId = madeOrder.User_id; // Assuming madeOrder contains User_id
 
             MakeReview frmMakeReview = new MakeReview(dishName, madeOrder.Dessert, userId);
+            Hide();
             frmMakeReview.ShowDialog();
+            Close();
+        }
+
+        private void Button_NoReview_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

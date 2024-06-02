@@ -36,9 +36,9 @@ namespace Project.Forms
 
                 if (LoggedUser != null && LoggedUser.CheckPassword(password))
                 {
-                    OrderALaCarte frmOrderALaCarte = new OrderALaCarte(LoggedUser);
+                    DashBoard menu = new DashBoard(LoggedUser);
                     Hide();
-                    frmOrderALaCarte.ShowDialog();
+                    menu.ShowDialog();
                     Close();
                 }
                 else
